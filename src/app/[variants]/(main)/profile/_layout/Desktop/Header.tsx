@@ -1,12 +1,12 @@
 'use client';
 
-import { ActionIcon } from '@lobehub/ui';
-import { ChatHeader } from '@lobehub/ui/chat';
+// import { ActionIcon } from '@lobehub/ui';
+// import { ChatHeader } from '@lobehub/ui/chat';
 import { Drawer, type DrawerProps } from 'antd';
 import { createStyles } from 'antd-style';
-import { Menu } from 'lucide-react';
+// import { Menu } from 'lucide-react';
 import { ReactNode, memo, useState } from 'react';
-import { Flexbox } from 'react-layout-kit';
+// import { Flexbox } from 'react-layout-kit';
 
 import BrandWatermark from '@/components/BrandWatermark';
 
@@ -31,11 +31,10 @@ interface HeaderProps extends Pick<DrawerProps, 'getContainer'> {
 
 const Header = memo<HeaderProps>(({ children, getContainer, title }) => {
   const [open, setOpen] = useState(false);
-  const { styles, theme } = useStyles();
+  const { theme } = useStyles();
 
   return (
-    <>
-     
+    <div>
       <Drawer
         bodyStyle={{
           display: 'flex',
@@ -62,7 +61,7 @@ const Header = memo<HeaderProps>(({ children, getContainer, title }) => {
         {children}
         <BrandWatermark paddingInline={12} />
       </Drawer>
-    </>
+    </div>
   );
 });
 
