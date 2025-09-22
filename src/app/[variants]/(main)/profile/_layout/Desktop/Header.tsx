@@ -29,7 +29,7 @@ interface HeaderProps extends Pick<DrawerProps, 'getContainer'> {
   title: ReactNode;
 }
 
-const Header = memo<HeaderProps>(({ children, getContainer, title }) => {
+const Header = memo<HeaderProps>(({ children, getContainer}) => {
   const [open, setOpen] = useState(false);
   const { theme } = useStyles();
 
