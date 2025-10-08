@@ -65,7 +65,7 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
           tooltipProps={{ placement: 'right' }}
         />
       </Link>
-      {enableKnowledgeBase && (
+      /* {enableKnowledgeBase && (
         <Link aria-label={t('tab.files')} href={'/files'}>
           <ActionIcon
             active={isFilesActive}
@@ -75,8 +75,8 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
             tooltipProps={{ placement: 'right' }}
           />
         </Link>
-      )}
-      {showAiImage && (
+      )} */
+      /* {showAiImage && (
         <Link aria-label={t('tab.aiImage')} href={'/image'}>
           <ActionIcon
             active={isImageActive}
@@ -86,8 +86,8 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
             tooltipProps={{ placement: 'right' }}
           />
         </Link>
-      )}
-      {showMarket && (
+      )} */
+      /* {showMarket && (
         <Link aria-label={t('tab.discover')} href={'/discover'}>
           <ActionIcon
             active={isDiscoverActive}
@@ -97,7 +97,7 @@ const TopActions = memo<TopActionProps>(({ tab, isPinned }) => {
             tooltipProps={{ placement: 'right' }}
           />
         </Link>
-      )}
+      )} */
     </Flexbox>
   );
 });
