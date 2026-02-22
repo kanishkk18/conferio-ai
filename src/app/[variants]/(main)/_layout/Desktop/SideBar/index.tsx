@@ -37,11 +37,11 @@ const Nav = memo(() => {
             <Avatar />
           </div>
         }
-        bottomActions={
+        {/* bottomActions={
           <div className={electronStylish.nodrag}>
             <BottomActions />
           </div>
-        }
+        } */}
         className={electronStylish.draggable}
         style={{
           height: '100%',
