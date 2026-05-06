@@ -13,9 +13,9 @@ import { useQueryRoute } from '@/hooks/useQueryRoute';
 const ChangelogModal = () => {
   const router = useQueryRoute();
 
-  useEffect(() => {
-    router.replace('/changelog');
-  }, []);
+  // useEffect(() => {
+  //   router.replace('/changelog');
+  // }, []);
 
   return null;
 };
